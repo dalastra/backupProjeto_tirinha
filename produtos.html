@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Dashboard</title>
+    <title>Produtos - Tirinha Embalagens</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/componentes.css">
 </head>
 
 <body>
@@ -23,27 +23,27 @@
 
         <nav class="sidebar__menu">
 
-            <a class="sidebar__item">
+            <a href="index.html" class="sidebar__item">
                 <i class="ri-dashboard-line"></i>
                 DASHBOARD
             </a>
 
-            <a class="sidebar__item sidebar__item--active">
+            <a href="produtos.html" class="sidebar__item sidebar__item--active">
                 <i class="ri-box-3-line"></i>
                 PRODUTOS
             </a>
 
-            <a class="sidebar__item">
+            <a href="pedidos.html" class="sidebar__item">
                 <i class="ri-shopping-cart-line"></i>
                 PEDIDOS
             </a>
 
-            <a class="sidebar__item">
+            <a href="clientes.html" class="sidebar__item">
                 <i class="ri-user-3-line"></i>
                 CLIENTES
             </a>
 
-            <a class="sidebar__item">
+            <a href="perfil.html" class="sidebar__item">
                 <i class="ri-user-settings-line"></i>
                 PERFIL
             </a>
@@ -55,9 +55,98 @@
 
         <header class="main__header">
             <h1>PRODUTOS</h1>
+            <button class="btn btn--primary">
+                <i class="ri-add-box-line"></i>
+                ADICIONAR
+            </button>
         </header>
 
-
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NOME</th>
+                    <th>PREÇO</th>
+                    <th>ESTOQUE</th>
+                    <th>MATERIAL</th>
+                    <th>AÇÃO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>TUBOLATA 9X9</td>
+                    <td>R$10,50</td>
+                    <td>120</td>
+                    <td>PAPELÃO</td>
+                    <td><a href="editprodutos.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>TUBOLATA 8X15</td>
+                    <td>R$11,50</td>
+                    <td>125</td>
+                    <td>PAPELÃO</td>
+                    <td><a href="editprodutos.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>CAIXA COELHO INDIVIDUAL</td>
+                    <td>R$4,50</td>
+                    <td>204</td>
+                    <td>PAPEL CARTÃO</td>
+                    <td><a href="editprodutos.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>CAIXA LISA 4 DOCES</td>
+                    <td>R$3,10</td>
+                    <td>315</td>
+                    <td>PAPEL CARTÃO</td>
+                    <td><a href="editprodutos.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>CAIXA OVO DE COLHER</td>
+                    <td>R$5,50</td>
+                    <td>57</td>
+                    <td>PAPEL CARTÃO</td>
+                    <td><a href="editprodutos.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>CAIXA COELHO E DOCES</td>
+                    <td>R$8,00</td>
+                    <td>4</td>
+                    <td>PAPEL CARTÃO</td>
+                    <td><a href="editprodutos.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>CAIXA LISA 6 DOCES</td>
+                    <td>R$3,30</td>
+                    <td>130</td>
+                    <td>PAPEL CARTÃO</td>
+                    <td><a href="editprodutos.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>CAIXA LISA 9 DOCES</td>
+                    <td>R$3,50</td>
+                    <td>236</td>
+                    <td>PAPEL CARTÃO</td>
+                    <td><a href="editprodutos.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>CAIXA LISA 16 DOCES</td>
+                    <td>R$5,50</td>
+                    <td>13</td>
+                    <td>PAPEL CARTÃO</td>
+                    <td><a href="editprodutos.html" class="table__link">EDITAR</a></td>
+                </tr>
+            </tbody>
+        </table>
 
     </main>
 

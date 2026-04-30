@@ -56,3 +56,90 @@
 .card__info--orange { color: var(--orange); }
 .card__info--gray { color: var(--gray); }
 .card__info--red { color: var(--red); }
+
+/* BUTTON */
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn--primary {
+    background: var(--yellow);
+    color: var(--color-text);
+}
+
+.btn i {
+    font-size: 20px;
+}
+
+/* TABLE */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.15);
+    margin-top: 30px;
+}
+
+.table thead {
+    background: #f5e6c8;
+}
+
+.table th {
+    padding: 16px;
+    text-align: left;
+    font-weight: 600;
+    color: var(--color-text);
+    font-size: 14px;
+    border-right: 1px solid #e8dcc0;
+}
+
+.table th:last-child {
+    border-right: none;
+}
+
+.table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #e8dcc0;
+    border-right: 1px solid #e8dcc0;
+    color: var(--color-text);
+    font-size: 14px;
+}
+
+.table td:last-child {
+    border-right: none;
+}
+
+.table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.table tbody tr:nth-child(odd) {
+    background: #fefef8;
+}
+
+.table tbody tr:nth-child(even) {
+    background: #f9f7f2;
+}
+
+.table__link {
+    color: var(--yellow);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}

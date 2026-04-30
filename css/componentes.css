@@ -1,0 +1,58 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+.card {
+    background: var(--color-card);
+    border-radius: var(--radius);
+    padding: 35px;
+
+    box-shadow: 0 10px 15px rgba(0,0,0,0.15);
+
+    position: relative;
+}
+
+/* BARRA SUPERIOR */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 70%;
+    height: 5px;
+    border-radius: 10px;
+}
+
+/* CORES */
+.card--yellow::before { background: var(--yellow); }
+.card--orange::before { background: var(--orange); }
+.card--gray::before { background: var(--gray); }
+.card--red::before { background: var(--red); }
+
+/* TEXTOS */
+.card__title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.card__value {
+    font-size: 56px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.card__info {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* CORES INFO */
+.card__info--yellow { color: var(--yellow); }
+.card__info--orange { color: var(--orange); }
+.card__info--gray { color: var(--gray); }
+.card__info--red { color: var(--red); }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tirinha Embalagens</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <div class="sidebar__logo">
+            <img src="assets/logo.png" alt="Logo">
+        </div>
+
+        <nav class="sidebar__menu">
+
+            <a href="index.html" class="sidebar__item sidebar__item--active">
+                <i class="ri-dashboard-line"></i>
+                DASHBOARD
+            </a>
+
+            <a href="produtos.html" class="sidebar__item">
+                <i class="ri-box-3-line"></i>
+                PRODUTOS
+            </a>
+
+            <a href="pedidos.html" class="sidebar__item">
+                <i class="ri-shopping-cart-line"></i>
+                PEDIDOS
+            </a>
+
+            <a href="clientes.html" class="sidebar__item">
+                <i class="ri-user-3-line"></i>
+                CLIENTES
+            </a>
+
+            <a href="perfil.html" class="sidebar__item">
+                <i class="ri-user-settings-line"></i>
+                PERFIL
+            </a>
+
+        </nav>
+    </aside>
+
+    <main class="main">
+
+        <header class="main__header">
+            <h1>DASHBOARD</h1>
+        </header>
+
+        <section class="dashboard">
+
+            <article class="card card--yellow">
+                <h2 class="card__title">TOTAL DE VENDAS</h2>
+                <p class="card__value">R$ 12.500,00</p>
+                <span class="card__info card__info--yellow">
+                    +12% EM RELAÇÃO À SEMANA PASSADA
+                </span>
+            </article>
+
+            <article class="card card--orange">
+                <h2 class="card__title">PEDIDOS</h2>
+                <p class="card__value">120</p>
+                <span class="card__info card__info--orange">
+                    8 PENDENTES
+                </span>
+            </article>
+
+            <article class="card card--gray">
+                <h2 class="card__title">CLIENTES</h2>
+                <p class="card__value">320</p>
+                <span class="card__info card__info--gray">
+                    +15 NOVOS ESSE MÊS
+                </span>
+            </article>
+
+            <article class="card card--red">
+                <h2 class="card__title">ESTOQUE BAIXO</h2>
+                <p class="card__value">5</p>
+                <span class="card__info card__info--red">
+                    PRODUTOS COM MENOS DE 5 UNIDADES
+                </span>
+            </article>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

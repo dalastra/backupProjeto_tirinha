@@ -1,0 +1,130 @@
+/* LOGIN PAGE */
+
+.login__body {
+    height: 100%;
+}
+
+.login__container {
+    display: flex;
+    height: 100vh;
+}
+
+/* LEFT SIDE */
+.login__left {
+    flex: 1;
+    background: var(--color-sidebar);
+    background-image: url('../assets/Caixas decoradas para presentes doces 1 (1).png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.login__logo img {
+    width: 723px;
+    height: 482px;
+    object-fit: contain;
+}
+
+.login__decoration img {
+    max-width: 280px;
+    height: auto;
+}
+
+/* RIGHT SIDE */
+.login__right {
+    flex: 1;
+    background: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.login__title {
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: left;
+}
+
+.login__form {
+    background: white;
+    border-radius: var(--radius);
+    padding: 50px 40px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.login__label {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 12px;
+}
+
+.login__input {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 20px;
+    background: #f5e6c8;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: var(--color-text);
+}
+
+.login__input::placeholder {
+    color: var(--color-muted);
+}
+
+.login__button {
+    width: auto;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 25px;
+    background: var(--yellow);
+    color: var(--color-text);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.login__button:hover {
+    opacity: 0.9;
+}
+
+.login__footer {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--color-text);
+    width: 100%;
+}
+
+.login__footer p {
+    margin: 0;
+}
+
+.login__link {
+    color: var(--color-text);
+    text-decoration: none;
+    cursor: pointer;
+}

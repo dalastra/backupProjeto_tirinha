@@ -45,8 +45,14 @@ body {
 
 .sidebar__item--active {
     background: #f0c86e;
-    border-left: 4px solid #f4b400;
+    border-left: 20px solid #f4b400;
+    border-radius: 0 25px 25px 0;
+    margin-left: -20px;
+    padding-left: 32px;
+    padding-top: 18px;
+    padding-bottom: 18px;
 }
+
 
 /* MAIN */
 .main {

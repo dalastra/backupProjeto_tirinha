@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Dashboard</title>
+    <title>Pedidos - Tirinha Embalagens</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/componentes.css">
 </head>
 
 <body>
@@ -48,7 +48,6 @@
                 PERFIL
             </a>
 
-
         </nav>
     </aside>
 
@@ -56,9 +55,98 @@
 
         <header class="main__header">
             <h1>PEDIDOS</h1>
+            <button class="btn btn--primary" onclick="window.location.href='addpedidos.html'">
+                <i class="ri-add-box-line"></i>
+                ADICIONAR
+            </button>
         </header>
 
-
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>CLIENTE</th>
+                    <th>TOTAL</th>
+                    <th>PAGAMENTO</th>
+                    <th>STATUS</th>
+                    <th>AÇÃO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>ANA CLARA</td>
+                    <td>R$110,50</td>
+                    <td>PIX</td>
+                    <td></td>
+                    <td><a href="editpedidos.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="editpedidos.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>  </td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                    <td><a href="editpedidos.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>   </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="editpedidos.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="editpedidos.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="editpedidos.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>   </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="editpedidos.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                    <td><a href="editpedidos.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>   </td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                    <td><a href="editpedidos.html" class="table__link">EDITAR</a></td>
+                </tr>
+            </tbody>
+        </table>
 
     </main>
 

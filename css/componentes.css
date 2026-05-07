@@ -6,7 +6,7 @@
 
 .card {
     background: var(--color-card);
-    border-radius: var(--radius);
+    border-radius: 60px;
     padding: 35px;
 
     box-shadow: 0 10px 15px rgba(0,0,0,0.15);
@@ -22,7 +22,7 @@
     left: 15%;
     width: 70%;
     height: 5px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 /* CORES */
@@ -113,9 +113,9 @@
     padding: 18px 16px;
     text-align: left;
     font-weight: 700;
-    color: var(--color-text);
-    font-size: 15px;
-    border-right: 1px solid #e8dcc0;
+    color: #4F4F4F;
+    font-size: 18px;
+    border-right: 1px solid #FFCD53;
 }
 
 .table th:last-child {
@@ -124,10 +124,10 @@
 
 .table td {
     padding: 14px 16px;
-    border-bottom: 1px solid #e8dcc0;
-    border-right: 1px solid #e8dcc0;
-    color: var(--color-text);
-    font-size: 14px;
+    border-bottom: 1px solid #FFCD53;
+    border-right: 1px solid #FFCD53;
+    color: #000000;
+    font-size: 16px;
 }
 
 .table td:last-child {
@@ -147,7 +147,7 @@
 }
 
 .table__link {
-    color: var(--yellow);
+    color: #FFDD8A;
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;

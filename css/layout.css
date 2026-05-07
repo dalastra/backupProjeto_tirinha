@@ -105,3 +105,34 @@ body {
     justify-content: center;
     padding: 200px;
 }
+
+.product__body {
+    height: 100%;
+}
+
+.product__container {
+    display: flex;
+    height: 100vh;
+}
+
+.product__left {
+    flex: 1;
+    background: var(--color-sidebar);
+    background-image: url('../assets/Caixas decoradas para presentes doces 1 (1).png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.product__right {
+    flex: 1;
+    background: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 200px;
+}

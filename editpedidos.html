@@ -2,65 +2,81 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Dashboard</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Adicionar Pedidos</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
-
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/componentes.css">
 </head>
-
-<body>
-
+<body class="product__body">
     <aside class="sidebar">
         <div class="sidebar__logo">
             <img src="assets/logo.png" alt="Logo">
         </div>
-
         <nav class="sidebar__menu">
-
             <a href="index.html" class="sidebar__item">
-                <i class="ri-dashboard-line"></i>
-                DASHBOARD
+                <i class="ri-dashboard-line"></i> DASHBOARD
             </a>
-
             <a href="produtos.html" class="sidebar__item">
-                <i class="ri-box-3-line"></i>
-                PRODUTOS
+                <i class="ri-box-3-line"></i> PRODUTOS
             </a>
-
             <a href="pedidos.html" class="sidebar__item sidebar__item--active">
-                <i class="ri-shopping-cart-line"></i>
-                PEDIDOS
+                <i class="ri-shopping-cart-line"></i> PEDIDOS
             </a>
-
             <a href="clientes.html" class="sidebar__item">
-                <i class="ri-user-3-line"></i>
-                CLIENTES
+                <i class="ri-user-3-line"></i> CLIENTES
             </a>
-
             <a href="perfil.html" class="sidebar__item">
-                <i class="ri-user-settings-line"></i>
-                PERFIL
+                <i class="ri-user-settings-line"></i> PERFIL
             </a>
-
-
         </nav>
     </aside>
 
     <main class="main">
-
         <header class="main__header">
             <h1>PEDIDOS</h1>
         </header>
 
+        <div class="product__content">
+            <form class="product__form-box">
+                <div class="product__field">
+                    <label class="product__label">ID</label>
+                    <input type="text" class="product__input" placeholder="000...">
+                </div>
 
+                <div class="product__field">
+                    <label class="product__label">CLIENTE</label>
+                    <input type="text" class="product__input" placeholder="Digite o nome do cliente...">
+                </div>
 
+                <div class="product__field">
+                    <label class="product__label">TOTAL</label>
+                    <input type="text" class="product__input" placeholder="R$0.000,00...">
+                </div>
+
+                <div class="product__field">
+                    <label class="product__label">PAGAMENTO</label>
+                    <input type="text" class="product__input" placeholder="Digite a forma de pagamento...">
+                </div>
+
+                <div class="product__field">
+                    <label class="product__label">PRODUTO</label>
+                    <input type="text" class="product__input" placeholder="Digite o nome do produto...">
+                </div>
+
+                <div class="product__field">
+                    <label class="product__label">QUANTIDADE</label>
+                    <input type="text" class="product__input" placeholder="000...">
+                </div>
+            </form>
+
+            <button type="button" class="product__btn-add" onclick="window.location.href='pedidos.html'">
+                <i class="ri-save-3-line"></i>
+                <span>EDITAR PEDIDOS</span>
+            </button>
+        </div>
     </main>
-
 </body>
 </html>

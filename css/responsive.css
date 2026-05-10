@@ -1,0 +1,340 @@
+/* RESPONSIVIDADE - TIRINHA EMBALAGENS */
+/* Baseado no design do Figma */
+
+/* BREAKPOINT PARA TABLETS */
+@media screen and (max-width: 1024px) {
+    .sidebar {
+        width: 80px;
+        padding: 20px 10px;
+        align-items: center;
+    }
+
+    .sidebar__logo img {
+        width: 40px;
+    }
+
+    .sidebar__item {
+        justify-content: center;
+        padding: 12px;
+        font-size: 0;
+    }
+
+    .sidebar__item i {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .sidebar__item--active {
+        margin-left: 0;
+        border-left: none;
+        border-bottom: 4px solid #f4b400;
+        border-radius: 10px;
+        padding: 12px;
+    }
+
+    .main {
+        padding: 20px;
+    }
+
+    .main__header h1 {
+        font-size: 32px;
+    }
+
+    .dashboard {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* BREAKPOINT PARA CELULARES */
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    /* SIDEBAR - TRANSFORMADA EM MENU HAMBURGER */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        background: var(--color-sidebar);
+        padding: 15px 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .sidebar__logo {
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .sidebar__logo img {
+        width: 35px;
+        height: auto;
+    }
+
+    .sidebar__logo-text {
+        display: none;
+    }
+
+    /* Menu hamburger - ícone */
+    .sidebar__menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+    }
+
+    .sidebar__menu-toggle span {
+        width: 25px;
+        height: 3px;
+        background: var(--color-text);
+        border-radius: 2px;
+        display: block;
+    }
+
+    /* Menu lateral - inicialmente escondido */
+    .sidebar__menu {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--color-sidebar);
+        flex-direction: column;
+        gap: 0;
+        padding: 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        z-index: 999;
+    }
+
+    .sidebar__menu.active {
+        max-height: 500px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .sidebar__item {
+        padding: 15px 20px;
+        font-size: 16px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 5px 0;
+    }
+
+    .sidebar__item i {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .sidebar__item--active {
+        background: #f0c86e;
+        border-left: none;
+        border-radius: 8px;
+        margin-left: 0;
+        padding-left: 20px;
+    }
+
+    /* MAIN - AJUSTADO PARA MOBILE */
+    .main {
+        padding-top: 100px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+        margin-top: 0;
+    }
+
+    .main__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .main__header h1 {
+        font-size: 28px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* DASHBOARD - CARDS EM COLUNA */
+    .dashboard {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        border-radius: 40px;
+        padding: 25px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .card__title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .card__value {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .card__info {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    /* TABELAS - RESPONSIVAS */
+    .table-container {
+        overflow-x: auto;
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 20px;
+    }
+
+    .table {
+        min-width: 600px;
+    }
+
+    .table th, .table td {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .table th {
+        font-size: 14px;
+    }
+
+    /* FORMULÁRIOS */
+    .login__container, .product__container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .login__left, .product__left {
+        display: none;
+    }
+
+    .login__right, .product__right {
+        padding: 20px;
+        background: var(--color-bg);
+        min-height: auto;
+    }
+
+    .login__title, .product__title {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .login__form {
+        width: 100%;
+        max-width: 100%;
+        padding: 25px;
+        border-radius: 40px;
+    }
+
+    .product__form-box {
+        width: 100%;
+        padding: 25px;
+        border-radius: 30px;
+    }
+
+    .product__input {
+        width: 100% !important;
+        padding: 12px 20px !important;
+        font-size: 14px;
+    }
+
+    .product__label {
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    .product__btn-add {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .login__input {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    .login__button {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    .login__group {
+        margin-bottom: 20px;
+    }
+
+    .login__label {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}
+
+/* BREAKPOINT PARA CELULARES MUITO PEQUENOS */
+@media screen and (max-width: 480px) {
+    .main {
+        padding-top: 90px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .main__header h1 {
+        font-size: 24px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card__value {
+        font-size: 32px;
+    }
+
+    .card__title {
+        font-size: 14px;
+    }
+
+    .login__title, .product__title {
+        font-size: 24px;
+    }
+
+    .login__form, .product__form-box {
+        padding: 20px;
+    }
+
+    .table th, .table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}

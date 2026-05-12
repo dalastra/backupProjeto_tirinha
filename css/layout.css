@@ -1,16 +1,19 @@
 body {
     display: flex;
     min-height: 100vh;
+    margin: 0;
 }
 
 /* SIDEBAR */
 .sidebar {
     width: 260px;
-    min-height: 100vh;
     background: var(--color-sidebar);
     padding: 30px 20px;
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
+    /* Garantir que a sidebar sempre ocupe a altura total do body */
+    align-self: stretch; 
 }
 
 .sidebar__logo {
@@ -58,6 +61,10 @@ body {
 .main {
     flex: 1;
     padding: 40px 60px 100px 60px;
+    background: var(--color-bg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .main__header {

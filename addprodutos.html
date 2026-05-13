@@ -3,33 +3,42 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar Produtos</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/componentes.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body class="product__body">
+
     <aside class="sidebar">
         <div class="sidebar__logo">
             <img src="assets/logo.png" alt="Logo">
         </div>
+
         <nav class="sidebar__menu">
             <a href="index.html" class="sidebar__item">
                 <i class="ri-dashboard-line"></i> DASHBOARD
             </a>
+
             <a href="produtos.html" class="sidebar__item sidebar__item--active">
                 <i class="ri-box-3-line"></i> PRODUTOS
             </a>
+
             <a href="pedidos.html" class="sidebar__item">
                 <i class="ri-shopping-cart-line"></i> PEDIDOS
             </a>
+
             <a href="clientes.html" class="sidebar__item">
                 <i class="ri-user-3-line"></i> CLIENTES
             </a>
+
             <a href="perfil.html" class="sidebar__item">
                 <i class="ri-user-settings-line"></i> PERFIL
             </a>
@@ -37,39 +46,114 @@
     </aside>
 
     <main class="main">
+
         <header class="main__header">
             <h1>PRODUTOS</h1>
         </header>
 
-        <div class="product__content">
+        <section class="product__content">
+
             <form class="product__form-box">
+
                 <div class="product__field">
-                    <label class="product__label">ID</label>
-                    <input type="text" class="product__input" placeholder="000...">
+                    <label class="product__label">
+                        ID
+                    </label>
+
+                    <input 
+                        type="text"
+                        class="product__input"
+                        placeholder="000..."
+                        required
+                    >
                 </div>
 
                 <div class="product__field">
-                    <label class="product__label">NOME</label>
-                    <input type="text" class="product__input" placeholder="Digite o nome do produto...">
+                    <label class="product__label">
+                        NOME
+                    </label>
+
+                    <input 
+                        type="text"
+                        class="product__input"
+                        placeholder="Digite o nome do produto..."
+                        required
+                        minlength="3"
+                    >
                 </div>
 
                 <div class="product__field">
-                    <label class="product__label">PREÇO</label>
-                    <input type="text" class="product__input" placeholder="R$0.000,00...">
+                    <label class="product__label">
+                        PREÇO
+                    </label>
+
+                    <input 
+                        type="number"
+                        class="product__input"
+                        placeholder="0.00"
+                        required
+                        min="1"
+                    >
                 </div>
 
                 <div class="product__field">
-                    <label class="product__label">ESTOQUE</label>
-                    <input type="text" class="product__input" placeholder="000...">
+                    <label class="product__label">
+                        ESTOQUE
+                    </label>
+
+                    <input 
+                        type="number"
+                        class="product__input"
+                        placeholder="000..."
+                        required
+                        min="1"
+                    >
                 </div>
+
             </form>
 
-            <button type="button" class="product__btn-add" onclick="window.location.href='produtos.html'">
+            <button 
+                type="button"
+                class="product__btn-add"
+                id="abrirModal"
+            >
                 <i class="ri-save-3-line"></i>
-                <span>ADICIONAR PRODUTO</span>
+
+                <span>
+                    ADICIONAR PRODUTO
+                </span>
             </button>
-        </div>
+
+        </section>
+
     </main>
-<script src="js/menu.js"></script>
+
+    <!-- MODAL -->
+
+    <div class="modal" id="modal">
+
+        <div class="modal__content">
+
+            <i class="ri-checkbox-circle-line modal__icon"></i>
+
+            <h2 class="modal__title">
+                Produto adicionado!
+            </h2>
+
+            <p class="modal__text">
+                O produto foi cadastrado com sucesso no sistema.
+            </p>
+
+            <button 
+                class="modal__button"
+                id="fecharModal"
+            >
+                Fechar
+            </button>
+
+        </div>
+
+    </div>
+
 </body>
 </html>

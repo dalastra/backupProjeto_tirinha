@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>Perfil - Tirinha Embalagens</title>
+    <title>Tirinha Embalagens</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -25,12 +25,12 @@
 
         <nav class="sidebar__menu">
 
-            <a href="dashboard.html" class="sidebar__item">
+            <a href="dashboard.html" class="sidebar__item sidebar__item--active">
                 <i class="ri-dashboard-line"></i>
                 DASHBOARD
             </a>
 
-            <a href="produtos.html" class="sidebar__item ">
+            <a href="produtos.html" class="sidebar__item">
                 <i class="ri-box-3-line"></i>
                 PRODUTOS
             </a>
@@ -45,7 +45,7 @@
                 CLIENTES
             </a>
 
-            <a href="perfil.html" class="sidebar__item sidebar__item--active">
+            <a href="perfil.html" class="sidebar__item">
                 <i class="ri-user-settings-line"></i>
                 PERFIL
             </a>
@@ -56,35 +56,43 @@
     <main class="main">
 
         <header class="main__header">
-            <h1>PERFIL</h1>
+            <h1>DASHBOARD</h1>
         </header>
 
-        <section class="profile-card">
-            <div class="profile-info">
-                <div class="profile-group">
-                    <span class="profile-label">NOME:</span>
-                    <span class="profile-value">NICOLAS CAMPOS DALASTRA</span>
-                </div>
+        <section class="dashboard">
 
-                <div class="profile-group">
-                    <span class="profile-label">EMAIL:</span>
-                    <span class="profile-value">ncamposdalastra@gmail.com</span>
-                </div>
+            <article class="card card--yellow">
+                <h2 class="card__title">TOTAL DE VENDAS</h2>
+                <p class="card__value">R$ 110,50</p>
+                <span class="card__info card__info--yellow">
+                    + 5% EM RELAÇÃO À SEMANA PASSADA
+                </span>
+            </article>
 
-                <div class="profile-group">
-                    <span class="profile-label">CARGO:</span>
-                    <span class="profile-value">GERENTE</span>
-                </div>
-            </div>
+            <article class="card card--orange">
+                <h2 class="card__title">PEDIDOS</h2>
+                <p class="card__value">1</p>
+                <span class="card__info card__info--orange">
+                    0 PENDENTES
+                </span>
+            </article>
 
-            <div class="profile-avatar">
-                <i class="ri-user-fill" style="font-size: 120px; color: #fff;"></i>
-            </div>
+            <article class="card card--gray">
+                <h2 class="card__title">CLIENTES</h2>
+                <p class="card__value">327</p>
+                <span class="card__info card__info--gray">
+                    +1 NOVOS ESSE MÊS
+                </span>
+            </article>
 
-            <button class="btn-edit-profile" onclick="window.location.href='editperfil.html'">
-                <i class="ri-pencil-line"></i>
-                EDITAR
-            </button>
+            <article class="card card--red">
+                <h2 class="card__title">ESTOQUE BAIXO</h2>
+                <p class="card__value">1</p>
+                <span class="card__info card__info--red">
+                    PRODUTOS COM MENOS DE 5 UNIDADES
+                </span>
+            </article>
+
         </section>
 
     </main>

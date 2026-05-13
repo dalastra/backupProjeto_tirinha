@@ -14,7 +14,6 @@
     position: relative;
 }
 
-/* BARRA SUPERIOR */
 .card::before {
     content: "";
     position: absolute;
@@ -25,13 +24,11 @@
     border-radius: 20px;
 }
 
-/* CORES */
 .card--yellow::before { background: var(--yellow); }
 .card--orange::before { background: var(--orange); }
 .card--gray::before { background: var(--gray); }
 .card--red::before { background: var(--red); }
 
-/* TEXTOS */
 .card__title {
     font-size: 20px;
     font-weight: 600;

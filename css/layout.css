@@ -4,7 +4,6 @@ body {
     margin: 0;
 }
 
-/* SIDEBAR */
 .sidebar {
     min-height: 100vh;
     width: 260px;
@@ -13,7 +12,6 @@ body {
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-    /* Garantir que a sidebar sempre ocupe a altura total do body */
     align-self: stretch; 
 }
 
@@ -58,7 +56,6 @@ body {
 }
 
 
-/* MAIN */
 .main {
     flex: 1;
     padding: 40px 60px 100px 60px;
@@ -82,7 +79,6 @@ body {
     margin: 0;
 }
 
-/* LOGIN PAGE LAYOUT */
 .login__body {
     height: 100%;
 }
